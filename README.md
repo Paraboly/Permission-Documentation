@@ -49,9 +49,13 @@ permission.${module}.${page}.${component}.${component_id}${permission}
 
 
 **No Permission:** ```permission.internal-control.project.*.*.NO_PERMISSION(0)```
+</br>
 **Read ALL:** ```permission.internal-control.project.*.*.READ(1)```
+</br>
 **ALL:** ```permission.internal-control.project.*.*.ALL(7)```
+</br>
 **All Buttons Example**: ```permission.internal-control.project.*.*.no_permission```
+</br>
 
 
 ### Example ENCODE with Advanced Use Case: 
