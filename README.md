@@ -1,7 +1,10 @@
 
 # Permission Documentation
 
-  Permission documantation by examples, encodes and CHMOD system. Permission algorithm works from top to bottom !
+  Permission documantation by examples, encodes and CHMOD system.
+  
+ ### **One and Only Important Note:** 
+ Permission algorithm works from top to bottom !
 
 ## Example Data as JSON 
 ```js
@@ -44,13 +47,12 @@ permission.${module}.${page}.${component}.${component_id}${permission}
 
 ### Example ENCODEs: 
 
-```js
-**No Permission:** permission.internal-control.project.*.*.NO_PERMISSION(0)
-**Read ALL:** permission.internal-control.project.*.*.READ(1)
-**ALL:** permission.internal-control.project.*.*.ALL(7)
-**All Buttons Example**: permission.internal-control.project.*.*.no_permission
-permission.internal-control.project.create
-```
+
+**No Permission:** ```permission.internal-control.project.*.*.NO_PERMISSION(0)```
+**Read ALL:** ```permission.internal-control.project.*.*.READ(1)```
+**ALL:** ```permission.internal-control.project.*.*.ALL(7)```
+**All Buttons Example**: ```permission.internal-control.project.*.*.no_permission```
+
 
 ### Example ENCODE with Advanced Use Case: 
 
@@ -66,6 +68,8 @@ permission.internal-control.project.create
 ```
 
 ## Fundamental CHMOD Architecture
+
+
 | Value | R   | W   | X   | Description   |
 | ----- | --- | --- | --- | ------------- |
 | 0     | 0   | 0   | 0   | NO_PERMISSION |
