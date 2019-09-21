@@ -10,23 +10,23 @@
 ```js
 [
   {
-    "code": "permission.internal-control",
-    "name": "internal-control",
+    "code": "permission.system",
+    "name": "system",
     "pages": [
       {
-        "code": "permission.internal-control.details",
+        "code": "permission.system.details",
         "name": "details-page",
         "components": [
           {
-            "code": "permission.system.internal-control.details.costs",
+            "code": "permission.system.system.details.costs",
             "name": "costs",
             "component-items": [
               {
-                "code": "permission.system.internal-control.details.costs.delete_button",
+                "code": "permission.system.system.details.costs.delete_button",
                 "name": "delete_button",
                 "permissions": [
                   {
-                    "code": "permission.internalControl.project.costs.delete_button.0",
+                    "code": "permission.system.project.costs.delete_button.0",
                     "name": "NO_PERMISSION"
                   }
                 ]
@@ -48,13 +48,13 @@ permission.${module}.${page}.${component}.${component_id}${permission}
 ### Example ENCODEs: 
 
 
-**No Permission:** ```permission.internal-control.project.*.*.NO_PERMISSION(0)```
+**No Permission:** ```permission.system.project.*.*.NO_PERMISSION(0)```
 </br>
-**Read ALL:** ```permission.internal-control.project.*.*.READ(1)```
+**Read ALL:** ```permission.system.project.*.*.READ(1)```
 </br>
-**ALL:** ```permission.internal-control.project.*.*.ALL(7)```
+**ALL:** ```permission.system.project.*.*.ALL(7)```
 </br>
-**All Buttons Example**: ```permission.internal-control.project.*.*.no_permission```
+**All Buttons Example**: ```permission.system.project.*.*.no_permission```
 </br>
 
 
@@ -62,12 +62,12 @@ permission.${module}.${page}.${component}.${component_id}${permission}
 
 ```js
 (Buro) permissions: [
-    "permission.internalControl.project.*.*.READ",
-    "permission.internalControl.project.*.ihaneAdi.7",
-    "permission.internalControl.project.*.biddingNo.0",
-    "permission.internalControl.project.button.*.7",
-    "permission.internalControl.project.costs.*.0",
-    "permission.internalControl.project.dates.*.0",
+    "permission.system.project.*.*.READ",
+    "permission.system.project.*.price_tag.7",
+    "permission.system.project.*.delete_button.0",
+    "permission.system.project.button.*.7",
+    "permission.system.project.costs.*.0",
+    "permission.system.project.dates.*.0",
 ]
 ```
 
