@@ -8,36 +8,23 @@
 
 ## Example Data as JSON 
 ```js
-[
-  {
-    "code": "permission.system",
-    "name": "system",
-    "pages": [
-      {
-        "code": "permission.system.details",
-        "name": "details-page",
-        "components": [
-          {
-            "code": "permission.system.system.details.costs",
-            "name": "costs",
-            "component-items": [
-              {
-                "code": "permission.system.system.details.costs.delete_button",
-                "name": "delete_button",
-                "permissions": [
-                  {
-                    "code": "permission.system.project.costs.delete_button.0",
-                    "name": "NO_PERMISSION"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
+userPermissions: [
+    "system": [
+        "permission.system.project.*.*.1",
+        "permission.system.project.*.price_tag.7",
+        "permission.system.project.*.delete_button.3",
+        "permission.system.project.button.*.7",
+        "permission.system.project.costs.*.5",
+        "permission.system.project.dates.*.0",
+    ],
+    "internal-plugin":[
+        "permission.internal-plugin.list.*.*.3",
+        "permission.internal-plugin.list.*.button.0",
+        "permission.internal-plugin.list.*.delete_button.3",
+        "permission.internal-plugin.list.list_item.*.7",
     ]
-  }
 ]
+  
 ```
 ## ENCODE: 
 
@@ -61,7 +48,7 @@ permission.${module}.${page}.${component}.${component_id}${permission}
 ### Example ENCODE with Advanced Use Case: 
 
 ```js
-(Buro) permissions: [
+permissions: [
     "permission.system.project.*.*.1",
     "permission.system.project.*.price_tag.7",
     "permission.system.project.*.delete_button.3",
