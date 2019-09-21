@@ -62,11 +62,11 @@ permission.${module}.${page}.${component}.${component_id}${permission}
 
 ```js
 (Buro) permissions: [
-    "permission.system.project.*.*.READ",
+    "permission.system.project.*.*.1",
     "permission.system.project.*.price_tag.7",
-    "permission.system.project.*.delete_button.0",
+    "permission.system.project.*.delete_button.3",
     "permission.system.project.button.*.7",
-    "permission.system.project.costs.*.0",
+    "permission.system.project.costs.*.5",
     "permission.system.project.dates.*.0",
 ]
 ```
