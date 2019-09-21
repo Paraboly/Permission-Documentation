@@ -50,11 +50,11 @@ permission.${module}.${page}.${component}.${component_id}${permission}
 
 **No Permission:** ```permission.system.project.*.*.NO_PERMISSION(0)```
 </br>
-**Read ALL:** ```permission.system.project.*.*.READ(1)```
+**Read:** ```permission.system.project.*.*.READ(1)```
 </br>
 **ALL:** ```permission.system.project.*.*.ALL(7)```
 </br>
-**All Buttons Example**: ```permission.system.project.*.*.no_permission```
+**All Buttons Example**: ```permission.system.project.*.button.NO_PERMISSION(0)```
 </br>
 
 
